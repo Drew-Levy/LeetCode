@@ -6,7 +6,7 @@ public:
         int right = x >> 1;
         while(left <=right){
             int mid = (left+right) >> 1;
-            int square = mid*mid;
+            long square = long(mid)*mid;
 
             if(square==x) return mid;
             else if(square <x) left=mid+1;
